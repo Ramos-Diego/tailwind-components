@@ -1,0 +1,177 @@
+<!-- https://play.tailwindcss.com/OGNhxLeVg9 -->
+<div class="grid place-content-center gap-3 min-h-screen bg-gray-100 dark:bg-gray-800 dark:text-gray-100 py-10">
+  <!-- FORMS AND INPUTS -->
+  <form class="p-5 bg-gray-50 shadow-lg dark:bg-gray-900 rounded-md space-y-5 select-none">
+    <section>
+      <h1 class="text-center text-xl font-bold">Sign In</h1>
+    </section>
+    <!-- Input with label -->
+    <section class="space-y-3">
+      <label class="block font-bold">
+        Email
+        <input type="email" name="email" placeholder="daniela@email.com"
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+      <label class="block font-bold">
+        Password
+        <input type="password" name="password"
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+    </section>
+    <section class="flex justify-between items-center text-sm">
+      <label class="flex gap-1 items-center">
+        <input type="checkbox" name="remember"
+          class="cursor-pointer focus:outline-none transition focus:ring-2 focus:ring-blue-700 focus:ring-offset-1" />
+        Remember me
+      </label>
+      <a href="#" class="text-blue-600 dark:text-blue-50 focus:outline-none focus:underline">Forgot your password?</a>
+    </section>
+    <section>
+      <button
+        class="px-3 py-1 w-full rounded font-semibold bg-blue-600 text-white dark:bg-blue-600 transition focus:outline-none transform hover:scale-x-105 focus:scale-x-100 hover:bg-blue-700 focus:bg-blue-700 hover:shadow-md focus:shadow-md focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-200">Submit</button>
+    </section>
+    <section class="flex items-center gap-2">
+      <div class="h-px bg-gray-800 dark:bg-gray-100 flex-auto"></div>
+      <p class="text-center text-sm">Or continue with</p>
+      <div class="h-px bg-gray-800 dark:bg-gray-100 flex-auto"></div>
+    </section>
+    <section class="flex gap-3">
+      <button
+        class="border-2 border-gray-300 dark:border-gray-600 w-full rounded-md font-semibold focus:outline-none hover:shadow-md dark:hover:border-gray-400 transition focus:border-gray-600 dark:focus:border-gray-200 focus:shadow-md transform focus:translate-y-1">Google</button>
+      <button
+        class="border-2 border-gray-300 dark:border-gray-600 w-full rounded-md font-semibold focus:outline-none hover:shadow-md dark:hover:border-gray-400 transition focus:border-gray-600 dark:focus:border-gray-200 focus:shadow-md transform focus:translate-y-1">Twitter</button>
+      <button
+        class="border-2 border-gray-300 dark:border-gray-600 w-full rounded-md font-semibold focus:outline-none hover:shadow-md dark:hover:border-gray-400 transition focus:border-gray-600 dark:focus:border-gray-200 focus:shadow-md transform focus:translate-y-1">GitHub</button>
+    </section>
+  </form>
+
+  <!-- EMAIL -->
+  <label class="block font-bold">
+    Email
+    <input type="email" name="email" placeholder="daniela@email.com"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- PASSWORD -->
+  <label class="block font-bold">
+    Password
+    <input type="password" name="password"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- DATE -->
+  <label class="block font-bold">
+    Date
+    <input type="date" name="email"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- DATETIME -->
+  <label class="block font-bold">
+    Datetime
+    <input type="datetime-local" name="email"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- TIME -->
+  <label class="block font-bold">
+    Time
+    <input type="time" required name="time"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- NUMBER: Has up down arrows -->
+  <label class="block font-bold">
+    Number
+    <input type="number" name="number" min="-1" max="420" placeholder="Number (-1 to 420)"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- NUMBER: Using input type as text and inputmode as decimal makes the input a "number" input in mobile devices -->
+  <label class="block font-bold">
+    Number
+    <input placeholder="Number" inputmode="decimal"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- DESCRIPTION -->
+  <label class="block font-bold">
+    Description
+    <textarea name="description" rows="5" placeholder="Enter the description here"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400"></textarea>
+  </label>
+
+  <!-- RANGE -->
+  <label class="block font-bold">
+    Range
+    <input type="range" name="range"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition dark:hover:border-gray-400 focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- CHECKBOX -->
+  <label class="flex gap-1 items-center">
+    <input type="checkbox" name="remember"
+      class="cursor-pointer focus:outline-none transition focus:ring-2 focus:ring-blue-700 focus:ring-offset-1" />
+    Remember me
+  </label>
+
+  <!-- RADIO -->
+  <label class="block">
+    <input type="radio" name="radio"
+      class="cursor-pointer focus:outline-none transition focus:ring-2 focus:ring-blue-700 focus:ring-offset-1" />
+    Radio
+  </label>
+
+  <!-- COLOR -->
+  <label class="block font-bold">
+    Color
+    <input type="color" name="color"
+      class="mt-1 block rounded-md px-1 border-2 transition hover:shadow-md focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 focus:ring-blue-700" />
+  </label>
+
+  <!-- FILE -->
+  <label class="block font-bold">
+    File
+    <input type="file" name="color"
+      class="w-full rounded-md p-1 font-bold border-2 transition hover:shadow-md focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 focus:ring-blue-700" />
+  </label>
+
+  <!-- TEXT: Input without label (aria-label) -->
+  <input name="name" aria-label="name" maxlength="10" placeholder="Name (max 10 characters)"
+    class="w-full rounded-md font-semibold px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+
+  <input name="address" aria-label="Street" placeholder="Street"
+    class="w-full rounded-md font-semibold px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+
+  <!-- SEARCH: There is a separate type for search which provides better dynamic keyboards -->
+  <input name="search" aria-label="search" placeholder="Search"
+    class="w-full rounded-md font-semibold px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+
+  <!-- TIME -->
+  <label class="block font-bold">
+    Time
+    <input type="time" name="time"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- PHONE NUMBER -->
+  <label class="block font-bold">
+    Phone number
+    <input type="tel" name="telephone" placeholder="123-456-7890" minlength="10" maxlength="12"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+  </label>
+
+  <!-- SELECT/DROPDOWN -->
+  <label class="block font-bold">
+    Choose a pet:
+    <select name="select"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400">
+      <option value="" selected disabled>Please choose a pet</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+  </label>
+</div>
