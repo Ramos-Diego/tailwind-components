@@ -1,7 +1,8 @@
-<!-- https://play.tailwindcss.com/OGNhxLeVg9 -->
-<div class="grid place-content-center gap-3 min-h-screen bg-gray-100 dark:bg-gray-800 dark:text-gray-100 py-10">
+<div class="grid place-items-center gap-5 min-h-screen bg-gray-100 dark:bg-gray-800 dark:text-gray-100 py-10">
+
   <!-- FORMS AND INPUTS -->
-  <form class="p-5 bg-gray-50 shadow-lg dark:bg-gray-900 rounded-md space-y-5 select-none">
+  <form
+    class="max-w-sm w-full px-3 py-5 sm:px-5 bg-gray-50 shadow-lg dark:bg-gray-900 rounded-md space-y-5 select-none">
     <section>
       <h1 class="text-center text-xl font-bold">Sign In</h1>
     </section>
@@ -28,7 +29,7 @@
     </section>
     <section>
       <button
-        class="px-3 py-1 w-full rounded font-semibold bg-blue-600 text-white dark:bg-blue-600 transition focus:outline-none transform hover:scale-x-105 focus:scale-x-100 hover:bg-blue-700 focus:bg-blue-700 hover:shadow-md focus:shadow-md focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-200">Submit</button>
+        class="px-3 py-1 w-full rounded font-bold bg-blue-600 text-white dark:bg-blue-600 transition focus:outline-none transform hover:scale-x-105 focus:scale-x-100 hover:bg-blue-700 focus:bg-blue-700 hover:shadow-md focus:shadow-md focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-200">Submit</button>
     </section>
     <section class="flex items-center gap-2">
       <div class="h-px bg-gray-800 dark:bg-gray-100 flex-auto"></div>
@@ -42,6 +43,64 @@
         class="border-2 border-gray-300 dark:border-gray-600 w-full rounded-md font-semibold focus:outline-none hover:shadow-md dark:hover:border-gray-400 transition focus:border-gray-600 dark:focus:border-gray-200 focus:shadow-md transform focus:translate-y-1">Twitter</button>
       <button
         class="border-2 border-gray-300 dark:border-gray-600 w-full rounded-md font-semibold focus:outline-none hover:shadow-md dark:hover:border-gray-400 transition focus:border-gray-600 dark:focus:border-gray-200 focus:shadow-md transform focus:translate-y-1">GitHub</button>
+    </section>
+  </form>
+
+  <!-- PERSONAL INFORMATION -->
+  <form
+    class="max-w-screen-md w-full bg-gray-50 shadow-lg dark:bg-gray-900 rounded-md overflow-hidden space-y-5 select-none">
+    <!-- Input with label -->
+    <section class="grid grid-cols-6 gap-3 px-3 sm:px-5 pt-5">
+      <label class="font-medium col-span-full sm:col-span-3">
+        First Name
+        <input name="email" placeholder="Daniela"
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+      <label class="font-medium col-span-full sm:col-span-3">
+        Last Name
+        <input name="email" placeholder="Andrade"
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+      <label class="font-medium col-span-full sm:col-span-4">
+        Email address
+        <input type="email" name="email" placeholder="daniela@email.com"
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+      <!-- SELECT/DROPDOWN -->
+      <label class="font-medium col-span-full sm:col-span-3">
+        Country / Region
+        <select name="select"
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400">
+          <option value="USA">United States</option>
+          <option value="CAN">Canada</option>
+          <option value="MEX">Mexico</option>
+        </select>
+      </label>
+      <label class="font-medium col-span-full">
+        Street address
+        <input
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+      <label class="font-medium col-span-full md:col-span-2">
+        City
+        <input
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+      <label class="font-medium col-span-full sm:col-span-3 md:col-span-2">
+        State / Province
+        <input
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+      </label>
+      <label class="font-medium col-span-full sm:col-span-3 md:col-span-2">
+        ZIP / Postal
+        <input
+          class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
+      </label>
+    </section>
+    <section class="flex justify-end px-5 py-3 bg-gray-100 border-t-2 dark:bg-gray-900 dark:border-gray-600">
+      <button
+        class="px-3 py-1 w-auto rounded font-bold bg-blue-600 text-white dark:bg-blue-600 transition focus:outline-none transform hover:scale-x-105 focus:scale-x-100 hover:bg-blue-700 focus:bg-blue-700 hover:shadow-md focus:shadow-md focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-200">Save</button>
     </section>
   </form>
 
@@ -144,7 +203,7 @@
     class="w-full rounded-md font-semibold px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
 
   <!-- SEARCH: There is a separate type for search which provides better dynamic keyboards -->
-  <input name="search" aria-label="search" placeholder="Search"
+  <input type="search" name="search" aria-label="search" placeholder="Search"
     class="w-full rounded-md font-semibold px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:border-gray-400 focus:shadow-md focus:outline-none focus:ring-1 focus:border-blue-700 dark:focus:border-blue-400 focus:ring-blue-700 dark:focus:ring-blue-400" />
 
   <!-- TIME -->
