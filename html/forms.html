@@ -233,4 +233,25 @@
       <option value="goldfish">Goldfish</option>
     </select>
   </label>
+
+  <label class="block font-bold">
+    Custom
+    <!-- Example using the current text color to higlight the focused input element (requires custom config) -->
+    <!-- 
+        module.exports = {
+          theme: {
+            extend: {
+              boxShadow: {
+                'md-invert': '0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06)'
+              },
+            },
+          },
+          variants: {
+            // Control the shadows on dark mode to invert colors
+            boxShadow: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus', 'dark'],
+            },
+        } -->
+    <input type="email" name="email" placeholder="custom shadow for dark mode"
+      class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:shadow-md-invert focus:outline-none focus:ring-1 focus:ring-current focus:border-current" />
+  </label>
 </div>
