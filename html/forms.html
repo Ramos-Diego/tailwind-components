@@ -1,5 +1,5 @@
 <div class="grid place-items-center gap-5 min-h-screen bg-gray-100 dark:bg-gray-800 dark:text-gray-100 py-10">
-
+  <!-- <svg width="100" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="#000"><path d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /></g></g></svg> -->
   <!-- FORMS AND INPUTS -->
   <form
     class="max-w-sm w-full px-3 py-5 sm:px-5 bg-gray-50 shadow-lg dark:bg-gray-900 rounded-md space-y-5 select-none">
@@ -10,11 +10,13 @@
     <section class="space-y-3">
       <label class="block font-bold">
         Email
-        <input type="email" name="email" placeholder="daniela@email.com" class="input" />
+        <input type="email" name="email" placeholder="daniela@email.com"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
       <label class="block font-bold">
         Password
-        <input type="password" name="password" class="input" />
+        <input type="password" name="password"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
     </section>
     <section class="flex justify-between items-center text-sm">
@@ -49,43 +51,51 @@
     class="max-w-screen-md w-full bg-gray-50 shadow-lg dark:bg-gray-900 rounded-md overflow-hidden space-y-5 select-none">
     <!-- Input with label -->
     <section class="grid grid-cols-6 gap-3 px-3 sm:px-5 pt-5">
-      <label class="input-label col-span-full sm:col-span-3">
+      <label class="font-medium col-span-full sm:col-span-3">
         First Name
-        <input name="email" placeholder="Daniela" class="input" />
+        <input name="email" placeholder="Daniela"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
-      <label class="input-label col-span-full sm:col-span-3">
+      <label class="font-medium col-span-full sm:col-span-3">
         Last Name
-        <input name="email" placeholder="Andrade" class="input" />
+        <input name="email" placeholder="Andrade"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
-      <label class="input-label col-span-full sm:col-span-4">
+      <label class="font-medium col-span-full sm:col-span-4">
         Email address
-        <input type="email" name="email" placeholder="daniela@email.com" class="input" />
+        <input type="email" name="email" placeholder="daniela@email.com"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
       <!-- SELECT/DROPDOWN -->
-      <label class="input-label col-span-full sm:col-span-3">
+      <label class="font-medium col-span-full sm:col-span-3">
         Country / Region
-        <select name="select" class="input">
+        <select name="select"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400">
           <option value="USA">United States</option>
           <option value="CAN">Canada</option>
           <option value="MEX">Mexico</option>
         </select>
       </label>
-      <label class="input-label col-span-full">
+      <label class="font-medium col-span-full">
         Street address
-        <input class="input" />
+        <input
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
-      <label class="input-label col-span-full md:col-span-2">
+      <label class="font-medium col-span-full md:col-span-2">
         City
-        <input class="input" />
+        <input
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
-      <label class="input-label col-span-full sm:col-span-3 md:col-span-2">
+      <label class="font-medium col-span-full sm:col-span-3 md:col-span-2">
         State / Province
-        <input class="input" />
+        <input
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
       </label>
-      <label class="input-label col-span-full sm:col-span-3 md:col-span-2">
+      <label class="font-medium col-span-full sm:col-span-3 md:col-span-2">
         ZIP / Postal
-        <input class="input" />
+        <input
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
     </section>
     <section class="flex justify-end px-5 py-3 bg-gray-100 border-t-2 dark:bg-gray-900 dark:border-gray-600">
@@ -97,21 +107,25 @@
   <!-- SUBIMISSION -->
   <form class="max-w-screen-sm w-full bg-gray-50 shadow-lg dark:bg-gray-900 rounded-md overflow-hidden select-none">
     <section class="grid grid-cols-6 gap-3 px-3 sm:px-5 pt-5">
-      <label class="input-label col-span-full sm:col-span-3">
+      <label class="font-medium col-span-full sm:col-span-3">
         Word
-        <input placeholder="Lorem" class="input" />
+        <input placeholder="Lorem"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
-      <label class="block input-label col-span-full">
+      <label class="block font-medium col-span-full">
         Definition
-        <textarea name="definition" rows="5" placeholder="Enter the definition here" class="input"></textarea>
+        <textarea name="definition" rows="5" placeholder="Enter the definition here"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400"></textarea>
       </label>
-      <label class="input-label col-span-full ">
+      <label class="font-medium col-span-full ">
         Sentence
-        <input placeholder="This is a sentence." class="input" />
+        <input placeholder="This is a sentence."
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
-      <label class="input-label col-span-full sm:col-span-3">
+      <label class="font-medium col-span-full sm:col-span-3">
         Tags
-        <input placeholder="love, party" class="input" />
+        <input placeholder="love, party"
+          class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
       </label>
     </section>
     <section class="flex justify-end px-5 py-3 bg-gray-100 border-t-2 dark:bg-gray-900 dark:border-gray-600">
@@ -121,51 +135,59 @@
   </form>
 
   <!-- EMAIL -->
-  <label class="block input-label">
+  <label class="block font-medium">
     Email
-    <input type="email" name="email" placeholder="daniela@email.com" class="input" />
+    <input type="email" name="email" placeholder="daniela@email.com"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- PASSWORD -->
   <label class="block">
     Password
-    <input type="password" name="password" class="input" />
+    <input type="password" name="password"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- DATE -->
   <label class="block">
     Date
-    <input type="date" name="email" class="input" />
+    <input type="date" name="email"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- DATETIME -->
   <label class="block">
     Datetime
-    <input type="datetime-local" name="email" class="input" />
+    <input type="datetime-local" name="email"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- TIME -->
   <label class="block">
     Time
-    <input type="time" required name="time" class="input" />
+    <input type="time" required name="time"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- NUMBER: Has up down arrows -->
   <label class="block">
     Number
-    <input type="number" name="number" min="-1" max="420" placeholder="Number (-1 to 420)" class="input" />
+    <input type="number" name="number" min="-1" max="420" placeholder="Number (-1 to 420)"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- NUMBER: Using input type as text and inputmode as decimal makes the input a "number" input in mobile devices -->
   <label class="block">
     Number
-    <input placeholder="Number" inputmode="decimal" class="input" />
+    <input placeholder="Number" inputmode="decimal"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- DESCRIPTION -->
   <label class="block">
     Description
-    <textarea name="description" rows="5" placeholder="Enter the description here" class="input"></textarea>
+    <textarea name="description" rows="5" placeholder="Enter the description here"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400"></textarea>
   </label>
 
   <!-- RANGE -->
@@ -217,19 +239,22 @@
   <!-- TIME -->
   <label class="block">
     Time
-    <input type="time" name="time" class="input" />
+    <input type="time" name="time"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- PHONE NUMBER -->
   <label class="block">
     Phone number
-    <input type="tel" name="telephone" placeholder="123-456-7890" minlength="10" maxlength="12" class="input" />
+    <input type="tel" name="telephone" placeholder="123-456-7890" minlength="10" maxlength="12"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400" />
   </label>
 
   <!-- SELECT/DROPDOWN -->
   <label class="block">
     Choose a pet:
-    <select name="select" class="input">
+    <select name="select"
+      class="mt-1 px-3 py-1 w-full rounded-md border-2 dark:border-gray-600 dark:bg-gray-900 transition focus:outline-none focus:border-blue-700 dark:focus:border-blue-400">
       <option value="" selected disabled>Please choose a pet</option>
       <option value="dog">Dog</option>
       <option value="cat">Cat</option>
@@ -243,19 +268,19 @@
     Custom
     <!-- Example using the current text color to higlight the focused input element (requires custom config) -->
     <!-- 
-        module.exports = {
-          theme: {
-            extend: {
-              boxShadow: {
-                'md-invert': '0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06)'
+          module.exports = {
+            theme: {
+              extend: {
+                boxShadow: {
+                  'md-invert': '0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06)'
+                },
               },
             },
-          },
-          variants: {
-            // Control the shadows on dark mode to invert colors
-            boxShadow: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus', 'dark'],
-            },
-        } -->
+            variants: {
+              // Control the shadows on dark mode to invert colors
+              boxShadow: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus', 'dark'],
+              },
+          } -->
     <input type="email" name="email" placeholder="custom shadow for dark mode"
       class="mt-1 w-full rounded-md px-3 py-1 border-2 dark:border-gray-600 dark:bg-gray-900 transition hover:shadow-md dark:hover:shadow-md-invert focus:outline-none focus:ring-1 focus:ring-current focus:border-current" />
   </label>
